@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
 body{background:#050208;color:white;overflow-x:hidden}
 a{text-decoration:none}
-/* MOVING BACKGROUND */
+/* MOVING BACKGROUND - DO NOT CHANGE */
 .bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(45deg,#000,#1a0a2e,#3b0a4d,#0a2e1a,#000);background-size:400% 400%;animation:moveBg 12s ease infinite}
 @keyframes moveBg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .stars{position:fixed;inset:0;z-index:-1;opacity:.4;background-image:radial-gradient(white 1px,transparent 1px);background-size:40px 40px;animation:twinkle 2s infinite alternate}
@@ -19,6 +18,10 @@ a{text-decoration:none}
 .marquee span{display:inline-block;animation:scroll 18s linear infinite}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes shine{to{background-position:300% 0}}
+/* NEW - MOVING YELLOW PRICE LINE */
+.disclaimer{ background:#facc15;color:#000;overflow:hidden;white-space:nowrap;padding:9px 0;font-size:13px;font-weight:800 }
+.disclaimer span{display:inline-block;animation:scroll 16s linear infinite}
+.disclaimer a{color:#000;text-decoration:underline;font-weight:900}
 /* SHINING TEXT */
 .shine{background:linear-gradient(90deg,#facc15,#ff2d95,#00ffcc,#fff,#facc15);background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 2.5s linear infinite;font-weight:900}
 .glow{box-shadow:0 0 20px #facc15,0 0 40px #ff2d95;animation:pulse 1.5s infinite alternate}
@@ -68,11 +71,11 @@ footer{text-align:center;padding:28px;color:#94a3b8;font-size:13px}
 <body>
 <div class="bg"></div><div class="stars"></div>
 <div class="marquee"><span>✨ TIMO WEBS ✨ WEBSITES THAT SELL ✨ SHOPS ✨ SALONS ✨ RESTAURANTS ✨ CHURCHES ✨ SCHOOLS ✨ DJs ✨ PHOTOGRAPHERS ✨ FREE DEMO IN 24 HOURS ✨ WHATSAPP 0118 431 854 ✨ TIMO WEBS ✨ WEBSITES THAT SELL ✨ SHOPS ✨ SALONS ✨ RESTAURANTS ✨ CHURCHES ✨ SCHOOLS ✨ DJs ✨ PHOTOGRAPHERS ✨ FREE DEMO IN 24 HOURS ✨ WHATSAPP 0118 431 854 ✨&nbsp;</span></div>
-<div style="background:#facc15;color:#000;text-align:center;padding:8px 12px;font-size:13px;font-weight:700;line-height:1.4">💡 Prices shown are starting & illustrative prices only — Final price depends on complexity & features you want. <a href="https://wa.me/254118431854?text=Hi%20Timo,%20what%20will%20my%20website%20cost?" style="color:#000;text-decoration:underline;font-weight:900">DM for your exact FREE quote →</a></div>
+<div class="disclaimer"><span>💡 Prices shown are starting & illustrative prices only — Final price depends on complexity & features you want. &nbsp; <a href="https://wa.me/254118431854?text=Hi%20Timo,%20what%20will%20my%20website%20cost?">DM for your exact FREE quote →</a> &nbsp; 💡 Prices shown are starting & illustrative prices only — Final price depends on complexity & features you want. &nbsp; <a href="https://wa.me/254118431854?text=Hi%20Timo,%20what%20will%20my%20website%20cost?">DM for your exact FREE quote →</a> &nbsp;</span></div>
 <header><div class="logo">TIMO<span>✨</span><i>WEBS</i></div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20saw%20your%20website">DM TIMO →</a></header>
 
 <div class="hero">
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Timo">
+<img src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&q=80" alt="Timo - Young African Man">
 <div><span class="pill">🔥 NAIROBI • KENYA</span> <span class="pill">⚡ REPLY IN MINUTES</span> <span class="pill">💎 TRUSTED</span></div>
 <h1>Hi, I'm <span class="shine">TIMO.</span><br>I Build Websites<br>That Make You Look <span class="shine">RICH & BIG.</span></h1>
 <p>Your customers are on Google. If they don't find you, they find your competitor. I fix that in <b style="color:#facc15">2-3 days</b> — cheap, fast, beautiful. You get a FREE demo first. If you don't love it, you don't pay.</p>
