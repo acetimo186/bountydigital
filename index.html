@@ -3,66 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timo Webs | I Build Websites That Make You Look Big</title>
+<title>TIMO WEBS ✨ | Websites That Make You Look RICH</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#080808;color:white}
-.topbar{background:#facc15;color:black;text-align:center;padding:10px;font-weight:900;font-size:14px}
-header{max-width:1100px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:28px;font-weight:900}.logo span{color:#facc15}
-.btn{background:#facc15;color:black;padding:14px 22px;border-radius:30px;font-weight:900;text-decoration:none;display:inline-block}
-.btn-green{background:#25D366;color:white}
-.hero{max-width:1100px;margin:auto;padding:20px 20px 40px;text-align:center}
-.hero img{width:130px;height:130px;border-radius:50%;object-fit:cover;border:4px solid #facc15;margin-bottom:15px}
-.hero h1{font-size:42px;line-height:1.1}.hero h1 span{color:#facc15}
-.hero p{color:#cbd5e1;font-size:18px;max-width:620px;margin:15px auto 25px;line-height:1.6}
-.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;color:#cbd5e1;font-size:13px}
-.badges span{background:#1e293b;padding:8px 14px;border-radius:20px}
-.section{max-width:1100px;margin:auto;padding:40px 20px}
-.section h2{font-size:30px;text-align:center;margin-bottom:10px}
-.section p.sub{text-align:center;color:#94a3b8;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:#1e293b;border-radius:16px;overflow:hidden}
-.card img{width:100%;height:170px;object-fit:cover}
-.card-body{padding:20px}.card-body p{color:#cbd5e1;font-size:14px;line-height:1.5;margin:8px 0}
-.price{color:#facc15;font-weight:900;font-size:18px;margin:10px 0}
-.about{background:#111827;border-radius:16px;padding:30px;line-height:1.7;font-size:17px}
-.about b{color:#facc15}
-.price-card{background:white;color:black;border-radius:16px;padding:25px;text-align:center}
-.price-card.pop{border:4px solid #facc15}
-.price-card .amt{font-size:36px;font-weight:900;margin:12px 0}
-.price-card ul{list-style:none;text-align:left;line-height:2.1;font-size:14px}
-.testi{background:#1e293b;border-radius:16px;padding:22px;line-height:1.6}
-.testi b{color:#facc15}
-.contact-box{background:#facc15;color:black;border-radius:16px;padding:30px;text-align:center}
-footer{text-align:center;padding:30px;color:#64748b}
-.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 22px;border-radius:50px;font-weight:900;text-decoration:none;z-index:99}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#050208;color:white;overflow-x:hidden}
+a{text-decoration:none}
+/* MOVING BACKGROUND */
+.bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(45deg,#000,#1a0a2e,#3b0a4d,#0a2e1a,#000);background-size:400% 400%;animation:moveBg 12s ease infinite}
+@keyframes moveBg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.stars{position:fixed;inset:0;z-index:-1;opacity:.4;background-image:radial-gradient(white 1px,transparent 1px);background-size:40px 40px;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{from{opacity:.2}to{opacity:.6}}
+/* TOP MOVING WORDS */
+.marquee{background:linear-gradient(90deg,#facc15,#ff2d95,#00ffcc,#4d7cff,#facc15);background-size:300% 100%;animation:shine 3s linear infinite;color:black;font-weight:900;white-space:nowrap;overflow:hidden;padding:10px 0;font-size:14px}
+.marquee span{display:inline-block;animation:scroll 18s linear infinite}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes shine{to{background-position:300% 0}}
+/* SHINING TEXT */
+.shine{background:linear-gradient(90deg,#facc15,#ff2d95,#00ffcc,#fff,#facc15);background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 2.5s linear infinite;font-weight:900}
+.glow{box-shadow:0 0 20px #facc15,0 0 40px #ff2d95;animation:pulse 1.5s infinite alternate}
+@keyframes pulse{from{box-shadow:0 0 10px #facc15}to{box-shadow:0 0 30px #ff2d95,0 0 50px #00ffcc}}
+header{max-width:1150px;margin:auto;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:30px;font-weight:900;letter-spacing:1px}.logo i{color:#facc15;font-style:normal}
+.btn{display:inline-block;padding:14px 24px;border-radius:50px;font-weight:900;color:black;background:linear-gradient(90deg,#facc15,#ff9a00);margin:5px}
+.btn-g{background:linear-gradient(90deg,#25D366,#00ffcc);color:white}
+.btn-p{background:linear-gradient(90deg,#ff2d95,#a855f7);color:white}
+.btn-w{background:white;color:black}
+.hero{max-width:1150px;margin:auto;text-align:center;padding:30px 18px 20px}
+.hero img{width:145px;height:145px;border-radius:50%;object-fit:cover;border:5px solid #facc15;box-shadow:0 0 30px #facc15,0 0 60px #ff2d95}
+.hero h1{font-size:48px;line-height:1.05;margin:18px 0}.hero h1 span{font-size:52px}
+.hero p{color:#e2e8f0;font-size:18px;max-width:700px;margin:0 auto 20px;line-height:1.6}
+.pill{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);padding:8px 14px;border-radius:30px;font-size:13px;margin:4px}
+.wrap{max-width:1150px;margin:auto;padding:35px 18px}
+.wrap h2{font-size:34px;text-align:center;margin-bottom:8px}
+.wrap p.sub{text-align:center;color:#cbd5e1;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:20px;overflow:hidden;backdrop-filter:blur(8px);transition:.3s}
+.card:hover{transform:translateY(-6px) scale(1.02);border-color:#facc15}
+.card img{width:100%;height:165px;object-fit:cover}
+.card-body{padding:18px}.card-body p{color:#e2e8f0;font-size:14px;line-height:1.5;margin:8px 0}
+.price{font-weight:900;color:#facc15;font-size:19px;margin:10px 0}
+.cat{background:linear-gradient(135deg,#1e1b4b,#4c1d95);border-radius:20px;padding:20px;text-align:center;border:1px solid #a855f7}
+.cat span{font-size:36px}
+.cat h3{margin:10px 0 6px}.cat p{font-size:13px;color:#ddd6fe;line-height:1.5}
+.price-card{background:white;color:#111;border-radius:22px;padding:24px;text-align:center;position:relative}
+.price-card.pop{border:5px solid #facc15;transform:scale(1.03);box-shadow:0 0 30px #facc15}
+.price-card .amt{font-size:38px;font-weight:900;margin:10px 0;color:#7c3aed}
+.price-card ul{list-style:none;text-align:left;line-height:2;font-size:14px}
+.badge-pop{background:#facc15;color:black;font-weight:900;padding:6px 12px;border-radius:20px;font-size:12px;position:absolute;top:-14px;left:50%;transform:translateX(-50%)}
+.step{background:rgba(255,255,255,.08);border-radius:20px;padding:20px;text-align:center;border:1px solid rgba(255,255,255,.2)}
+.step b{font-size:38px}
+.testi{background:rgba(255,255,255,.09);border-radius:20px;padding:20px;line-height:1.6;border-left:5px solid #facc15}
+.faq{background:rgba(255,255,255,.08);border-radius:16px;padding:18px;margin-bottom:12px}
+.faq b{color:#facc15}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}
+.stat{background:linear-gradient(135deg,#ff2d95,#facc15);color:black;border-radius:18px;padding:18px}.stat:nth-child(2){background:linear-gradient(135deg,#00ffcc,#4d7cff)}.stat:nth-child(3){background:linear-gradient(135deg,#facc15,#fff)}.stat:nth-child(4){background:linear-gradient(135deg,#a855f7,#ff2d95);color:white}
+.stat h3{font-size:28px}.stat p{font-size:12px;font-weight:900}
+.contact{background:linear-gradient(135deg,#facc15,#ff2d95,#a855f7);color:white;border-radius:24px;padding:32px;text-align:center}
+footer{text-align:center;padding:28px;color:#94a3b8;font-size:13px}
+.wa{position:fixed;bottom:18px;right:16px;left:16px;background:#25D366;color:white;text-align:center;padding:16px;border-radius:50px;font-weight:900;font-size:17px;box-shadow:0 10px 30px rgba(0,0,0,.6);z-index:99}
+@media(max-width:600px){.hero h1{font-size:32px}.hero h1 span{font-size:34px}.stats{grid-template-columns:repeat(2,1fr)}.wa{bottom:12px}}
 </style>
 </head>
 <body>
-<div class="topbar">📍 NAIROBI, KENYA • DM ME NOW — I REPLY FAST</div>
-<header><div class="logo">TIMO<span>WEBS</span></div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20saw%20your%20website">DM Timo</a></header>
+<div class="bg"></div><div class="stars"></div>
+<div class="marquee"><span>✨ TIMO WEBS ✨ WEBSITES THAT SELL ✨ SHOPS ✨ SALONS ✨ RESTAURANTS ✨ CHURCHES ✨ SCHOOLS ✨ DJs ✨ PHOTOGRAPHERS ✨ FREE DEMO IN 24 HOURS ✨ WHATSAPP 0118 431 854 ✨ TIMO WEBS ✨ WEBSITES THAT SELL ✨ SHOPS ✨ SALONS ✨ RESTAURANTS ✨ CHURCHES ✨ SCHOOLS ✨ DJs ✨ PHOTOGRAPHERS ✨ FREE DEMO IN 24 HOURS ✨ WHATSAPP 0118 431 854 ✨&nbsp;</span></div>
+<header><div class="logo">TIMO<span>✨</span><i>WEBS</i></div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20saw%20your%20website">DM TIMO →</a></header>
+
 <div class="hero">
 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Timo">
-<h1>Hi, I'm Timo.<br><span>I Build Websites That Make You Look Big.</span></h1>
-<p>I'm a young builder from Nairobi. I help shops, salons, restaurants, churches and hustlers go online in 2-3 days. No big talk. I show you, you love it, we go.</p>
-<a class="btn btn-green" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20website">💬 WhatsApp Me Now</a>
-<a class="btn" style="background:white;margin-left:8px" href="tel:+254118431854">📞 Call 0118 431 854</a>
-<div class="badges" style="margin-top:20px"><span>✅ Based in Nairobi</span><span>✅ Reply in Minutes</span><span>✅ 2-3 Days Delivery</span></div>
+<div><span class="pill">🔥 NAIROBI • KENYA</span> <span class="pill">⚡ REPLY IN MINUTES</span> <span class="pill">💎 TRUSTED</span></div>
+<h1>Hi, I'm <span class="shine">TIMO.</span><br>I Build Websites<br>That Make You Look <span class="shine">RICH & BIG.</span></h1>
+<p>Your customers are on Google. If they don't find you, they find your competitor. I fix that in <b style="color:#facc15">2-3 days</b> — cheap, fast, beautiful. You get a FREE demo first. If you don't love it, you don't pay.</p>
+<a class="btn btn-g glow" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20website%20-%20send%20me%20FREE%20demo">💬 WHATSAPP ME NOW — FREE DEMO</a><br>
+<a class="btn btn-w" href="tel:+254118431854">📞 CALL 0118 431 854</a>
+<a class="btn btn-p" href="#pricing">💰 SEE PRICES ↓</a>
 </div>
-<div class="section"><div class="about"><h2 style="text-align:left">About Me — Real Talk</h2><br>My name is <b>Timo Webs</b>. I am not a big company. I am one guy who loves building things on the internet.<br><br>I help Kenyan businesses look professional online for a fair price.<br><br>When you DM me, you talk to ME directly. Not a secretary. Not a robot. Me.</div></div>
-<div class="section"><h2>What I Can Build For You</h2><p class="sub">DM me and say "I want this one" — I will start your FREE demo.</p><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800"><div class="card-body"><h3>🛍️ Shop Website</h3><p>Your products, prices, WhatsApp order, M-Pesa.</p><div class="price">From KES 6,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20SHOP%20website">I Want This →</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"><div class="card-body"><h3>🍔 Restaurant / Food</h3><p>Menu with photos, location, 1-click order.</p><div class="price">From KES 5,000</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20RESTAURANT%20website">I Want This →</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800"><div class="card-body"><h3>💼 Personal / Portfolio</h3><p>For DJs, salons, photographers, fundis. Look like a PRO.</p><div class="price">From KES 4,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20PERSONAL%20website">I Want This →</a></div></div>
+
+<div class="wrap"><div class="stats"><div class="stat"><h3>100+</h3><p>HAPPY CLIENTS DREAM</p></div><div class="stat"><h3>2-3 DAYS</h3><p>DELIVERY TIME</p></div><div class="stat"><h3>24 HRS</h3><p>FREE DEMO</p></div><div class="stat"><h3>KES 4,500</h3><p>STARTING PRICE</p></div></div></div>
+
+<div class="wrap"><h2>🔥 <span class="shine">What I Can Build For You</span></h2><p class="sub">Click any one — I will start your FREE demo today</p><div class="grid">
+<div class="cat"><span>🛍️</span><h3>SHOP / BOUTIQUE</h3><p>Products, prices, WhatsApp Order, M-Pesa. Sell while you sleep.</p><div class="price">From KES 6,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20SHOP%20website">I Want This →</a></div>
+<div class="cat"><span>💇‍♀️</span><h3>SALON / BARBERSHOP</h3><p>Styles gallery, prices, booking button. Clients book before they come.</p><div class="price">From KES 5,000</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20SALON%20website">I Want This →</a></div>
+<div class="cat"><span>🍔</span><h3>RESTAURANT / FOOD</h3><p>Menu with photos, delivery, 1-click WhatsApp order.</p><div class="price">From KES 5,000</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20RESTAURANT%20website">I Want This →</a></div>
+<div class="cat"><span>🏋️</span><h3>GYM / FITNESS</h3><p>Trainers, plans, joining form. Look like a big gym.</p><div class="price">From KES 5,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20GYM%20website">I Want This →</a></div>
+<div class="cat"><span>⛪</span><h3>CHURCH / SCHOOL</h3><p>Events, sermons, gallery, registration. Look trusted.</p><div class="price">From KES 5,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20CHURCH%20website">I Want This →</a></div>
+<div class="cat"><span>🏠</span><h3>REAL ESTATE / PLOTS</h3><p>Houses, plots, photos, call button. Sell faster.</p><div class="price">From KES 7,000</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20REAL%20ESTATE%20website">I Want This →</a></div>
+<div class="cat"><span>🎧</span><h3>DJ / ARTIST / MUSIC</h3><p>Your music, videos, bookings. Get more gigs.</p><div class="price">From KES 4,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20DJ%20website">I Want This →</a></div>
+<div class="cat"><span>📸</span><h3>PHOTOGRAPHER</h3><p>Beautiful portfolio that makes clients say WOW.</p><div class="price">From KES 5,000</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20PHOTOGRAPHER%20website">I Want This →</a></div>
+<div class="cat"><span>🔧</span><h3>FUNDI / PLUMBER / ELECTRICIAN</h3><p>People Google you and see a PRO, not just a number.</p><div class="price">From KES 4,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20FUNDI%20website">I Want This →</a></div>
+<div class="cat"><span>💼</span><h3>BUSINESS / COMPANY</h3><p>Company profile, services, testimonials. Look corporate.</p><div class="price">From KES 7,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20COMPANY%20website">I Want This →</a></div>
+<div class="cat"><span>🎓</span><h3>PERSONAL BRAND / CV</h3><p>Your story, your work, your contact. Get jobs & deals.</p><div class="price">From KES 4,500</div><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20PERSONAL%20website">I Want This →</a></div>
+<div class="cat"><span>✨</span><h3>CUSTOM IDEA?</h3><p>Have something different? Tell me. I can build ANYTHING.</p><div class="price">Let's Talk</div><a class="btn btn-p" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20have%20a%20custom%20idea">Tell Me →</a></div>
 </div></div>
-<div class="section"><h2>Simple Pricing</h2><p class="sub">50% to start, 50% when you are live. No hidden fees.</p><div class="grid">
-<div class="price-card"><h3>STARTER</h3><div class="amt">KES 4,500</div><ul><li>✔ 1-3 Pages</li><li>✔ WhatsApp Button</li><li>✔ Google Maps</li><li>✔ 2 Days Delivery</li></ul><br><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20STARTER%204500">Choose Starter</a></div>
-<div class="price-card pop"><h3>BUSINESS ★ MOST POPULAR</h3><div class="amt">KES 7,500</div><ul><li>✔ 5-7 Pages + Gallery</li><li>✔ Shop / Menu System</li><li>✔ Forms + Maps</li><li>✔ 1 Month Support</li></ul><br><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20BUSINESS%207500">Choose Business</a></div>
-<div class="price-card"><h3>PREMIUM</h3><div class="amt">KES 12,000</div><ul><li>✔ Online Shop + M-Pesa</li><li>✔ Logo + Social Setup</li><li>✔ Everything in Business</li></ul><br><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20PREMIUM%2012000">Choose Premium</a></div>
+
+<div class="wrap"><h2>🌟 My Work — <span class="shine">See The Magic</span></h2><p class="sub">These are the styles I can make for you</p><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800"><div class="card-body"><h3>🛍️ Fashion Shop — Nairobi</h3><p>Customers order on WhatsApp. Sales went up in 1 week.</p><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20like%20this%20SHOP">Make Mine Like This →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800"><div class="card-body"><h3>💇 Salon — Westlands</h3><p>Beautiful gallery + booking. Fully booked weekends now.</p><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20like%20this%20SALON">Make Mine Like This →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"><div class="card-body"><h3>🍔 Restaurant — Kisumu</h3><p>Menu + delivery button. More orders every day.</p><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20like%20this%20RESTAURANT">Make Mine Like This →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=800"><div class="card-body"><h3>⛪ Church — Nakuru</h3><p>Events + sermons online. Members love it.</p><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20like%20this%20CHURCH">Make Mine Like This →</a></div></div>
 </div></div>
-<div class="section"><div class="contact-box"><h2>Let's Talk. DM Me Directly.</h2><p style="margin:15px 0">Message me now and I will send you a FREE demo of YOUR website in 24 hours.</p><a class="btn btn-green" style="font-size:18px" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20saw%20your%20website%20and%20I%20want%20one">💬 WhatsApp: 0118 431 854 →</a><br><br><a class="btn" style="background:black;color:white" href="tel:+254118431854">📞 Or Call Me: 0118 431 854</a></div></div>
-<footer>Timo Webs © 2026 • Nairobi, Kenya</footer>
-<a class="wa" href="https://wa.me/254118431854?text=Hi%20Timo">💬 DM Timo</a>
+
+<div class="wrap" id="pricing"><h2>💰 <span class="shine">Simple Pricing — No Hidden Fees</span></h2><p class="sub">50% to start, 50% when you are LIVE. M-Pesa accepted.</p><div class="grid">
+<div class="price-card"><h3>⭐ STARTER</h3><div class="amt">KES 4,500</div><p>For hustlers starting out</p><ul><li>✔ 1-3 Pages</li><li>✔ WhatsApp Button</li><li>✔ Google Maps + Contact</li><li>✔ 2 Days Delivery</li><li>✔ Mobile Friendly</li></ul><br><a class="btn btn-p" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20STARTER%204500">Choose Starter →</a></div>
+<div class="price-card pop"><div class="badge-pop">🔥 MOST POPULAR</div><h3>👑 BUSINESS</h3><div class="amt">KES 7,500</div><p>For serious businesses</p><ul><li>✔ 5-7 Pages + Gallery</li><li>✔ Shop / Menu System</li><li>✔ Booking / Order Forms</li><li>✔ Google Business Setup</li><li>✔ 1 Month FREE Support</li></ul><br><a class="btn btn-g" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20BUSINESS%207500">Choose Business →</a></div>
+<div class="price-card"><h3>💎 PREMIUM</h3><div class="amt">KES 12,000</div><p>For brands that want it ALL</p><ul><li>✔ Online Shop + M-Pesa</li><li>✔ Logo + Social Media Setup</li><li>✔ Everything in Business</li><li>✔ 3 Months Support</li><li>✔ Priority — 24hr Delivery</li></ul><br><a class="btn" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20PREMIUM%2012000">Choose Premium →</a></div>
+</div></div>
+
+<div class="wrap"><h2>🚀 How It Works — <span class="shine">So Easy</span></h2><div class="grid">
+<div class="step"><b>1️⃣</b><h3>DM ME</h3><p>WhatsApp me. Tell me your business. I reply in minutes.</p></div>
+<div class="step"><b>2️⃣</b><h3>FREE DEMO</h3><p>In 24 hours I send you a demo of YOUR website. Free.</p></div>
+<div class="step"><b>3️⃣</b><h3>YOU LOVE IT</h3><p>You tell me what to change. I fix it until you say WOW.</p></div>
+<div class="step"><b>4️⃣</b><h3>GO LIVE 🚀</h3><p>You pay, I publish. Your business is online in 2-3 days.</p></div>
+</div></div>
+
+<div class="wrap"><h2>❤️ What People Say About Me</h2><div class="grid">
+<div class="testi">"Timo replied in 5 minutes. In 2 days my salon was online. Now customers book before they come. I am so happy!"<br><br><b style="color:#facc15">— Mary, Salon in Nairobi ⭐⭐⭐⭐⭐</b></div>
+<div class="testi">"I thought websites were for rich people. Timo made mine for 5,000 and it looks like 50,000. My customers trust me more now."<br><br><b style="color:#facc15">— Kevin, Restaurant in Kisumu ⭐⭐⭐⭐⭐</b></div>
+<div class="testi">"He explained everything simply. No big English. My church looks so professional now. God bless Timo."<br><br><b style="color:#facc15">— Pastor John, Nakuru ⭐⭐⭐⭐⭐</b></div>
+<div class="testi">"My boutique sales doubled. People find me on Google and order on WhatsApp. Best 6,500 I ever spent."<br><br><b style="color:#facc15">— Aisha, Boutique in Mombasa ⭐⭐⭐⭐⭐</b></div>
+</div></div>
+
+<div class="wrap"><h2>❓ Questions? <span class="shine">I Got You</span></h2>
+<div class="faq"><b>Q: How long does it take?</b><br>A: 2-3 days. Premium is 24 hours. I send you a FREE demo in 24 hours.</div>
+<div class="faq"><b>Q: Do I need to know computers?</b><br>A: No! You just WhatsApp me. I do everything. You just tell me what you want.</div>
+<div class="faq"><b>Q: How do I pay?</b><br>A: M-Pesa. 50% to start, 50% when live. No hidden fees.</div>
+<div class="faq"><b>Q: What if I don't like it?</b><br>A: You see FREE demo first. If you don't love it, you don't pay. Zero risk.</div>
+<div class="faq"><b>Q: Will my website work on phone?</b><br>A: Yes! 90% of your customers use phones. Your site will look PERFECT on phone.</div>
+</div>
+
+<div class="wrap"><h2>📍 I Serve All Kenya</h2><p class="sub">Nairobi • Mombasa • Kisumu • Nakuru • Eldoret • Thika • Kisii • Meru • Nyeri • Machakos • + Everywhere Online</p><div style="text-align:center"><span class="pill">Nairobi</span><span class="pill">Mombasa</span><span class="pill">Kisumu</span><span class="pill">Nakuru</span><span class="pill">Eldoret</span><span class="pill">Thika</span><span class="pill">Kisii</span><span class="pill">Online — Anywhere</span></div></div>
+
+<div class="wrap"><div class="contact"><h2 style="font-size:34px">Let's Make You LOOK BIG. 🚀</h2><p style="margin:14px 0;font-size:17px">DM me now. I will send you a FREE demo of YOUR website in 24 hours. No risk. No stress.</p><a class="btn btn-w glow" style="font-size:18px" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20saw%20your%20beautiful%20website%20and%20I%20want%20one%20-%20send%20me%20FREE%20demo">💬 WHATSAPP: 0118 431 854 →</a><br><a class="btn" style="background:black;color:white" href="tel:+254118431854">📞 OR CALL ME: 0118 431 854</a><p style="margin-top:12px;font-size:13px">I reply FAST. If I'm busy, I reply within 1 hour. Promise.</p></div></div>
+
+<footer>TIMO WEBS ✨ © 2026 • Nairobi, Kenya • Built by Timo, For Kenya • WhatsApp 0118 431 854</footer>
+<a class="wa" href="https://wa.me/254118431854?text=Hi%20Timo,%20I%20want%20a%20website">💬 DM TIMO NOW — FREE DEMO</a>
 </body>
 </html>
